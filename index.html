@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="contenedor_de_imagen">
+        <img onclick="
+            imagen= document.getElementById('img1')
+            if(imagen.style.border){
+                imagen.style.border=''
+            }
+            else{
+                imagen.style.border='2px solid red'
+            }
+        "
+        src="./assets/img/seamoth.png" id='img1' alt="seamoth">
+    </div>
+
+    <link rel="js" href="./assets/js/script.js">
+</body>
+</html>

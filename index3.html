@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="selectores">
+        <h1>Ingresa el password</h1>
+        <div class="group-select">
+            <select name="select" class="select" id="sel1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="select" class="select" id="sel2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="select" class="select" id="sel3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button class="btn3" onclick="
+            sele1 = document.querySelector('#sel1').value;
+            sele2 = document.querySelector('#sel2').value;
+            sele3 = document.querySelector('#sel3').value;
+            resultado = document.querySelector('.resultado');
+
+
+            if (sele1==='9'&&sele2==='1'&&sele3==='1') {
+                resultado.innerHTML='Password 1 es correcto';
+
+            } else if (sele1==='7'&&sele2==='1'&&sele3==='4') {
+                resultado.innerHTML='Password 2 es correcto';
+
+            } else {
+                resultado.innerHTML='Password incorrecto';
+            }
+        
+        ">Ingresar
+        </button>
+        <p class="resultado"></p>
+    </div>
+
+</body>
+</html>
